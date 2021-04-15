@@ -35,3 +35,21 @@ def factorial_loop(n):
     for i in range(1, n+1):
         result *= i
     return result
+
+def fizz_buzz(n1, n2):
+    for i in range(n1, n2+1):
+        print('Fizz' * (i % 3 == 0) + 'Buzz' * (i % 5 == 0) or i)
+
+def isPrime(n):
+    is_prime = True
+    cnt = 2
+    if n == 1:
+        is_prime = False
+    else:
+        while cnt < n:
+            if n % cnt == 0:
+                is_prime == False
+                break
+            cnt += 1
+            
+    return is_prime

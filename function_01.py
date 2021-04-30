@@ -14,13 +14,13 @@ def minus(a, b):
     """
     return a - b
 
-print(minus(5,3, 99))
-help(minus)
+print(minus(5, 3))
+help(minus)         # 함수 실행 전 함수 설정에 대한 부분을 보여줌.
 print(minus.__doc__)
 
 
 # 가변 매개변수
-def print_even(times, *values):
+def print_even(times, *values):     # *표시는 포인터가 아닌, 가변 매개변수 표기이다.
     for value in values:
         print(times * value)
 

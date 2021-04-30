@@ -8,15 +8,15 @@ fruits = {
     'kiwi':'키위',
     'banana':'버내너'} 
 
-for k, v in fruits.items():
-    print(k, '\t', v)   # 키값 + Tab + Value 출력
+for k, v in fruits.items():     # 키값 + Tab + Value 출력
+    print(k, '\t', v)   
 
 print(fruits.keys())
 
 # values() → Value 값만 출력
 print(fruits.values())
 
-# items() → Key와 Value 세트로 출력
+# items() → Key와 Value 세트로 출력(for문 이용 시 Key, Value 따로 출력 가능)
 print(fruits.items())
 
 

@@ -1,11 +1,10 @@
 {
-	"folders": [
-		{
-			"path": "../Spring/spring"
-		},
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../Spring/spring"
+        }
+    ]
 }

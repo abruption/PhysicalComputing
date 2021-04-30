@@ -24,7 +24,7 @@ for line in lines:
 fp.close()
 
 
-# with
+# with : 자동으로 close()를 해주기때문에 메모리 방지
 with open('wf.txt') as fp:
     lines = fp.readlines()  # 파일을 1행 단위의 리스트 원소로 리턴
     for line in lines:

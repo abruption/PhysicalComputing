@@ -4,7 +4,8 @@
 import random
 alcohol_foods = {}
 
-with open('alcohols.txt', 'r') as fp1:
+# 'r'은 read 모드이지만 기본 값이므로 생략가능함
+with open('alcohols.txt', 'r') as fp1:      
     with open('foods.txt', 'r') as fp2:
         alcohols = fp1.readlines()  # 리스트 변수 alcohols
         foods = fp2.readlines()     # 리스트 변수 foods

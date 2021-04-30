@@ -19,22 +19,22 @@ trim1 = 'Python'
 trim2 = '   Python  '
 trim3 = '&&&Python&&&'
 trim4 = '&&&pyt&on&&'
-print(trim1)
-print(trim2.strip())
-print(trim3.strip('&'))
-print(trim3.rstrip('&'))
-print(trim3.lstrip('&'))
-print(trim4.strip())
+print(trim1)                # Python
+print(trim2.strip())        # Python → 공백이 들어간 모든 문자를 제거함
+print(trim3.strip('&'))     # Python → &이 들어간 모든 문자를 제거함.
+print(trim3.rstrip('&'))    # &&&Python → rstrip은 우측에 있는 것만 제거해줌.
+print(trim3.lstrip('&'))    # Python&&& → lstrip은 좌측에 있는 것만 제거해줌.
+print(trim4.strip())        # &&&pyt&on&& → 문자 중간에 있는 특수문자는 제거하지 못함.
 print('')
 
 # str()
-print('1' + "hi")
-print(str(1) + "hi")
+print('1' + "hi")           # 1hi
+print(str(1) + "hi")        # 1hi
 
 # int()
 a = '1'
 b = 2
-print(int(a) + b)
+print(int(a) + b)           
 
 # input()
 #name = input('이름을 입력하세요 : ')

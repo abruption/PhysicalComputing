@@ -39,7 +39,7 @@ kim, han, tom, lee = subjects
 print(kim, tom, han)
 
 a = input()
-b = input()q
+b = input()
 # t = b
 # b = a
 # a = t

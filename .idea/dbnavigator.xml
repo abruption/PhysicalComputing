@@ -32,7 +32,15 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="d2cae86b-9040-47d7-96cc-0db62b023e05">
-      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[select * from  students;]]></console>
+      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[create table member (
+    id text primary key,
+    pw text not null
+);
+
+select * from member;
+insert into member (id, pw) values ('deepblue', 'python123');
+insert into member (id, pw) values ('lovepython', 'test');
+insert into member (id, pw) values ('deep', 'python123');]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -42,6 +50,8 @@
     <connection id="d2cae86b-9040-47d7-96cc-0db62b023e05" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="d2cae86b-9040-47d7-96cc-0db62b023e05" dataset="main.pub" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="d2cae86b-9040-47d7-96cc-0db62b023e05" dataset="main.member" active-filter-id="" />
     <filter-actions connection-id="d2cae86b-9040-47d7-96cc-0db62b023e05" dataset="main.students" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
@@ -66,7 +76,9 @@
     <filters />
   </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces />
+    <recently-used-interfaces>
+      <mapping database-type="SQLITE" interface-id="DEFAULT" />
+    </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>

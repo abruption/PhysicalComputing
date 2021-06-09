@@ -43,6 +43,8 @@ def enter_pressed(e):
     """ 키보드 엔터키 이벤트 리스너 """
     menu_choice()
 
+# 술과 안주
+alcohol_foods = {}
 
 
 #### FrontEnd ####

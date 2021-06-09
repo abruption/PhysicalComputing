@@ -22,7 +22,7 @@ def menu_choice():
         conn.commit()
         # conn.close()
 
-        any = rd.choice(records[0])
+        any = rd.choice(records)[0]
 
         # conn = sqlite3.connect('test.db')
         # cur = conn.cursor()
@@ -31,6 +31,9 @@ def menu_choice():
         records = cur.fetchall()
         conn.commit()
         conn.close()
+        # print(records) → [('골뱅이소면',)]
+        # print(records[0]) → ('골뱅이소면',)
+        # print(records[0][0]) → 골뱅이소면
         lbl_display.configure(text='{0}에 어울리는 안주는 {1}입니다.'.format(any, records[0][0]))
 
     else:
@@ -58,7 +61,7 @@ def connect_db():
     cur.execute('select alcohols from pub')
     records = cur.fetchall()
     for k in range(len(records)):       # 출력 결과 : 주문하실 술(맥주/소주/고량주/위스키/아무거나/결제)은?
-        menu += str(records[k][0]) + '/'
+        menu += str(records[k][0]) + '/'        # [0][1], [1],[1], [2][1], [3][1] 등등
 
     conn.commit()
     conn.close()
@@ -85,7 +88,7 @@ if __name__ == "__main__":
     btn_menu = tk.Button(w, text='실행', command=menu_choice)
 
     # 위젯 배치 (Grid 레이아웃)
-    lbl_display.grid(row=0, column=0, columnspan=2)
+    lbl_display.grid(row=0, column=0, columnspan=2)     # columnspan은 셀 병합
     en_menu.grid(row=1, column=0, sticky='nswe')
     btn_menu.grid(row=1, column=1, sticky='nswe')
 

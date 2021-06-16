@@ -1,4 +1,4 @@
-# Database Part 3
+ # Database Part 3
 import sqlite3
 
 # DB 접속 후 커넥션 열기

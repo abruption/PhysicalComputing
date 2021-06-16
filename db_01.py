@@ -20,3 +20,5 @@
 # autoincrement : 자동증감
 # not null : Null이 들어갈 수 없음, 무조건 값이 있어야 함
 
+# 테이블 목록 : .tables
+# 스키마 정보 : .schema [테이블 이름]
